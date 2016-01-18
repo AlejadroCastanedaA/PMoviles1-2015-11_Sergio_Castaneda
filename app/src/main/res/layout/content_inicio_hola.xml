@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.sergioalejandro.talleumbppm.InicioHola"
+    tools:showIn="@layout/activity_inicio_hola">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click para confirmar"
+        android:id="@+id/BotonConfirmar"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:checked="false" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editarTextoa1"
+        android:layout_above="@+id/BotonConfirmar"
+        android:layout_alignRight="@+id/BotonConfirmar"
+        android:layout_alignEnd="@+id/BotonConfirmar"
+        android:textColorHint="#221818"
+        android:textStyle="italic"
+        android:editable="false"
+        android:layout_alignLeft="@+id/BotonConfirmar"
+        android:layout_alignStart="@+id/BotonConfirmar"
+        android:inputType="textCapWords|textPersonName|text"
+        android:linksClickable="false" />
+</RelativeLayout>
